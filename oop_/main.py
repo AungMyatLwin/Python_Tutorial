@@ -5,6 +5,7 @@ class Animal:
     #constructor
     def __init__(self,species,name,age):
         self.species=species
+        #private __name
         self.__name=name
         self.age=age
     
@@ -22,7 +23,7 @@ class Animal:
     @get_Name.setter
     def set_name(self,x):
         self.__name=x
-    
+
     def talk(self):
         self.talking="talking"
         print(f"{self.__name} is little {self.species} and {self.age} and {self.talking}")
