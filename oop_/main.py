@@ -35,6 +35,7 @@ class Cat(Animal):
     def __init__(self, species, name, age,talking):
         #super inherited from parent class
         super().__init__(species, name, age)
+        #same as super(species,name,age) in js
         self.talking=talking
 
     # override the talk function and its called polymorphism
